@@ -1,27 +1,52 @@
-.img-container {
-  width: 370px;
-  height: 570px;
-  background-position: center;
-  border-radius: 8px;
-  padding: 30px;
+.images-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  width: 1134px;
+  height: 691px;
+  margin: auto;
 
-  .title {
-    font-family: "Tanker";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #b1ffa4;
-    text-transform: uppercase;
-  }
-  button {
-    background-color: #b1ffa4;
-    height: 34px;
-    width: 34px;
+  .img-container {
+    width: 370px;
+    height: 570px;
+    background-position: center;
+    border-radius: 8px;
+    padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+    align-items: flex-end;
+    &:nth-child(2) {
+      margin-top: 60px;
+    }
+    &:nth-child(3) {
+      margin-top: 120px;
+    }
+
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      .title {
+        font-family: "Tanker";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #b1ffa4;
+        text-transform: uppercase;
+        word-break: break-all;
+      }
+      button {
+        background-color: #b1ffa4;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
   }
 }

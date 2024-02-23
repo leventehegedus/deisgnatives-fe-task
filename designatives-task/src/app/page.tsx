@@ -7,10 +7,12 @@ export default function Home() {
         className="img-container"
         style={{ backgroundImage: `url(${imgSrc})` }}
       >
-        <div className="title">{title}</div>
-        <button>
-          <img src="/arrow.svg" />
-        </button>
+        <div className="title-container">
+          <div className="title">{title}</div>
+          <button>
+            <img src="/arrow.svg" />
+          </button>
+        </div>
       </div>
     );
   };
@@ -44,9 +46,11 @@ export default function Home() {
         Hazánk egyik legtöbb tapasztalattal és referenciával bíró vállalkozása
         vagyunk.
       </div>
-      {renderImgBlocks("Zöldfalaink felépítése", "img_1.png")}
-      {renderImgBlocks("Zöldfalak karbantartása", "img_2.png")}
-      {renderImgBlocks("Zöldfalaink karbantartása", "img_3.png")}
+      <div className="images-container">
+        {renderImgBlocks("Zöldfalaink felépítése", "img_1.png")}
+        {renderImgBlocks("Zöldfalak karbantartása", "img_2.png")}
+        {renderImgBlocks("Zöldfalaink karbantartása", "img_3.png")}
+      </div>
       <div>Referenciáink</div>
       <div>Budaörs</div>
       <div>Decathlon</div>
