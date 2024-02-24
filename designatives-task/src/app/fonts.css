@@ -2,3 +2,13 @@
   font-family: "Tanker";
   src: url("/fonts/Tanker-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("/fonts/SharpGrotesk-Medium20.otf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("/fonts/SharpGrotesk-SemiBold20.otf") format("truetype");
+  font-weight: 600;
+}

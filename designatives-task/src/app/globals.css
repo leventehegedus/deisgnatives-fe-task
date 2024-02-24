@@ -20,6 +20,9 @@ body {
   color: #004947;
   background: #fff;
   background-image: url("/levelek.png");
+  background-position-y: 440px;
+  background-repeat: no-repeat;
+  padding: 30px;
 }
 
 @layer utilities {

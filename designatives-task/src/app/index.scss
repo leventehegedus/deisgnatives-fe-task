@@ -1,7 +1,127 @@
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("/hero_img.png");
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 30px;
+  position: relative;
+  margin-bottom: 104px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+
+    .content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      .links {
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #b1ffa4;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 14px;
+        background-color: #b1ffa4;
+        color: #004947;
+      }
+    }
+  }
+
+  .content-container {
+    width: 600px;
+    margin: 0 auto;
+    .title {
+      font-family: "Tanker";
+      font-size: 70px;
+      font-weight: 400;
+      line-height: 72px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+    .description {
+      font-family: "Sharp Grotesk";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      width: 440px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      color: #b1ffa4;
+    }
+    button {
+      padding: 12px 20px;
+      border-radius: 30px;
+      gap: 10px;
+      background-color: #b1ffa4;
+      font-family: "Sharp Grotesk";
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin: 0 auto;
+    }
+  }
+}
+.green-wall {
+  display: flex;
+  justify-content: space-between;
+  width: 1134px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  .intro {
+    font-family: "Sharp Grotesk";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    width: 353px;
+    img {
+      height: 17px;
+      width: 17px;
+    }
+    p {
+      &:first-child {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .big-text {
+    font-family: Tanker;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004947;
+    width: 585px;
+    span {
+      background-color: #fff;
+    }
+  }
+}
 .images-container {
   display: flex;
   gap: 12px;
-  align-items: center;
   justify-content: space-between;
   width: 1134px;
   height: 691px;
