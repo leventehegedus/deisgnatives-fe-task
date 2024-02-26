@@ -25,6 +25,11 @@
     color: $secondary-green;
     border-radius: 20px;
   }
+  .mobile-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 
   .content {
     display: flex;

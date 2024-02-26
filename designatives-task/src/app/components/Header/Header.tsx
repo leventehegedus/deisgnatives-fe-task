@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       />
       <Image
         src="/logo.svg"
-        className="mobile-view"
+        className="mobile-view mobile-logo"
         alt="Logo"
         height={74}
         width={147}
