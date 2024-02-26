@@ -7,6 +7,7 @@
   margin: auto;
   flex-wrap: wrap;
   padding: 24px;
+  margin-bottom: 56px;
 
   @include breakpoint-1440 {
     width: 1134px;
