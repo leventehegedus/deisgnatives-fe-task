@@ -1,6 +1,6 @@
 import GreenWallSection from "./components/GreenWallSection/GreenWallSection";
 import HeroSection from "./components/HeroSection/HeroSection";
-import ImagesSection from "./components/ImageSection";
+import ImagesSection from "./components/ImagesSection/ImagesSection";
 import "./index.scss";
 
 interface HomeProps {}

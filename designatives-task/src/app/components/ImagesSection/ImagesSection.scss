@@ -1,0 +1,16 @@
+@import "../../mixins";
+
+.images-container {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 24px;
+
+  @include breakpoint-1440 {
+    width: 1134px;
+    height: 691px;
+    padding: 0;
+  }
+}

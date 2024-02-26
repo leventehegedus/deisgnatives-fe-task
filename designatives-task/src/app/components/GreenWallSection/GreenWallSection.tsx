@@ -1,10 +1,7 @@
 import "./GreenWallSection.scss";
+import Image from "next/image";
 
-interface GreenWallSectionProps {}
-
-interface BigTextProps {}
-
-const BigText: React.FC<BigTextProps> = () => (
+const BigText: React.FC = () => (
   <div className="big-text">
     <span>
       Az ország teljes területén végzünk építéseket és karbantartásokat. Hazánk
@@ -13,10 +10,16 @@ const BigText: React.FC<BigTextProps> = () => (
   </div>
 );
 
-const GreenWallSection: React.FC<GreenWallSectionProps> = () => (
+const GreenWallSection: React.FC = () => (
   <div className="green-wall">
     <div className="intro">
-      <img className="desktop-view" src="/arrow.svg" alt="Arrow" />
+      <Image
+        className="desktop-view"
+        src="/arrow.svg"
+        alt="Arrow"
+        width={12}
+        height={12}
+      />
       <div>
         <p>Mi az a zöldfal?</p>
         <br />

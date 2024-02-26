@@ -1,5 +1,6 @@
 import Header from "../Header/Header";
 import "./HeroSection.scss";
+import Image from "next/image";
 
 interface HeroSectionProps {}
 
@@ -25,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         </div>
         <button>
           <span>Azonnali ajánlatot szeretne?</span>
-          <img src="/arrow.svg" alt="Arrow" />
+          <Image src="/arrow.svg" alt="Arrow" height={12} width={12} />
         </button>
       </div>
     </div>
