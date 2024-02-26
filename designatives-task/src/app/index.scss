@@ -76,6 +76,10 @@
       align-items: center;
       font-size: 16px;
       margin: 0 auto;
+      span {
+        line-height: 20px;
+        font-weight: 500;
+      }
     }
   }
 }
