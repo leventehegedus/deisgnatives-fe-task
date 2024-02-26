@@ -1,4 +1,5 @@
-import MenuLinks from "./MenuLinks";
+import MenuLinks from "../MenuLinks";
+import "./Header.scss";
 
 interface HeaderProps {}
 

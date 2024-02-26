@@ -1,3 +1,5 @@
+import "./GreenWallSection.scss";
+
 interface GreenWallSectionProps {}
 
 interface BigTextProps {}

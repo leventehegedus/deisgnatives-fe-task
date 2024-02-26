@@ -1,5 +1,5 @@
-import GreenWallSection from "./components/GreenWall";
-import HeroSection from "./components/HeroSection";
+import GreenWallSection from "./components/GreenWallSection/GreenWallSection";
+import HeroSection from "./components/HeroSection/HeroSection";
 import ImagesSection from "./components/ImageSection";
 import "./index.scss";
 

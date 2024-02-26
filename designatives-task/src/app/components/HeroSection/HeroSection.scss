@@ -1,0 +1,81 @@
+@import "../../mixins";
+@import "../../variables";
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("/hero_img.png");
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 226px 24px 140px 24px;
+  position: relative;
+  margin-bottom: 60px;
+
+  @include breakpoint-1440 {
+    padding: 200px 30px;
+    margin-bottom: 104px;
+  }
+
+  .content-container {
+    margin: 0 auto;
+
+    @include breakpoint-1440 {
+      width: 600px;
+    }
+
+    .title {
+      font-family: "Tanker";
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 16px;
+
+      @include breakpoint-1440 {
+        font-size: 70px;
+        line-height: 72px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      font-family: "Sharp Grotesk";
+      color: $primary-green;
+      margin: 0 auto 30px auto;
+      width: 338px;
+
+      @include breakpoint-1440 {
+        font-size: 16px;
+        line-height: 22px;
+        width: 440px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+    }
+
+    button {
+      padding: 12px 20px;
+      border-radius: 30px;
+      gap: 10px;
+      background-color: $primary-green;
+      font-family: "Sharp Grotesk";
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin: 0 auto;
+
+      span {
+        line-height: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}

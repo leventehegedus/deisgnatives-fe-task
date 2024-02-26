@@ -1,197 +1,31 @@
+@import "mixins";
+@import "variables";
+
 body {
   padding: 8px;
-  @media (min-width: 1440px) {
+  color: $secondary-green;
+
+  @include breakpoint-1440 {
     padding: 30px;
   }
 }
+
 .desktop-view {
   display: none;
-  @media (min-width: 1440px) {
+
+  @include breakpoint-1440 {
     display: block;
   }
 }
+
 .mobile-view {
   display: block;
-  @media (min-width: 1440px) {
+
+  @include breakpoint-1440 {
     display: none;
   }
 }
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url("/hero_img.png");
-  border-radius: 8px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 226px 24px 140px 24px;
-  position: relative;
-  margin-bottom: 60px;
-  @media (min-width: 1440px) {
-    padding: 200px 30px;
-    margin-bottom: 104px;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 36px 24px;
-    @media (min-width: 1440px) {
-      padding: 30px;
-    }
 
-    .hamburger-icon {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #b1ffa4;
-      color: #004947;
-      border-radius: 20px;
-    }
-
-    .content {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      .links {
-        display: flex;
-        gap: 30px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-        color: #b1ffa4;
-      }
-      button {
-        padding: 10px 20px;
-        border-radius: 30px;
-        font-size: 14px;
-        background-color: #b1ffa4;
-        color: #004947;
-      }
-    }
-  }
-
-  .content-container {
-    @media (min-width: 1440px) {
-      width: 600px;
-    }
-    margin: 0 auto;
-    .title {
-      font-family: "Tanker";
-      font-size: 38px;
-      font-weight: 400;
-      line-height: 42px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: #fff;
-      margin-bottom: 16px;
-      @media (min-width: 1440px) {
-        font-size: 70px;
-        line-height: 72px;
-        margin-bottom: 32px;
-      }
-    }
-    .description {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0em;
-      text-align: center;
-      font-family: "Sharp Grotesk";
-      color: #b1ffa4;
-      margin: 0 auto 30px auto;
-      width: 338px;
-
-      @media (min-width: 1440px) {
-        font-size: 16px;
-        line-height: 22px;
-        width: 440px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-      }
-    }
-    button {
-      padding: 12px 20px;
-      border-radius: 30px;
-      gap: 10px;
-      background-color: #b1ffa4;
-      font-family: "Sharp Grotesk";
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      margin: 0 auto;
-      span {
-        line-height: 20px;
-        font-weight: 500;
-      }
-    }
-  }
-}
-.green-wall {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-  padding: 24px;
-  @media (min-width: 1440px) {
-    width: 1134px;
-    padding: 0;
-    margin-bottom: 54px;
-  }
-
-  .intro {
-    font-family: "Sharp Grotesk";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    display: flex;
-    justify-content: flex-start;
-    gap: 25px;
-    padding-right: 42px;
-    margin-bottom: 20px;
-    @media (min-width: 1440px) {
-      width: 353px;
-      padding: 0;
-      margin: 0;
-    }
-    img {
-      height: 17px;
-      width: 17px;
-    }
-    p {
-      &:first-child {
-        text-transform: uppercase;
-      }
-    }
-  }
-  .big-text {
-    font-family: Tanker;
-    font-size: 36px;
-    line-height: 42px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #004947;
-    @media (min-width: 1440px) {
-      width: 585px;
-      font-size: 50px;
-      line-height: 52px;
-      margin: 0;
-    }
-
-    span {
-      background-color: #fff;
-    }
-  }
-}
 .images-container {
   display: flex;
   gap: 12px;
@@ -199,7 +33,8 @@ body {
   margin: auto;
   flex-wrap: wrap;
   padding: 24px;
-  @media (min-width: 1440px) {
+
+  @include breakpoint-1440 {
     width: 1134px;
     height: 691px;
     padding: 0;
@@ -215,19 +50,16 @@ body {
     align-items: flex-end;
     background-size: cover;
 
-    &:nth-child(2) {
-      margin-top: 0;
-      @media (min-width: 1440px) {
+    @include breakpoint-1440 {
+      &:nth-child(2) {
         margin-top: 60px;
       }
-    }
-    &:nth-child(3) {
-      margin-top: 0;
-      @media (min-width: 1440px) {
+      &:nth-child(3) {
         margin-top: 120px;
       }
     }
-    @media (min-width: 1440px) {
+
+    @include breakpoint-1440 {
       width: 370px;
       height: 570px;
     }
@@ -237,6 +69,7 @@ body {
       justify-content: space-between;
       align-items: flex-end;
       width: 100%;
+
       .title {
         font-family: "Tanker";
         font-size: 30px;
@@ -244,12 +77,13 @@ body {
         line-height: 36px;
         letter-spacing: 0em;
         text-align: left;
-        color: #b1ffa4;
+        color: $primary-green;
         text-transform: uppercase;
         word-break: break-all;
       }
+
       button {
-        background-color: #b1ffa4;
+        background-color: $primary-green;
         height: 34px;
         width: 34px;
         display: flex;
