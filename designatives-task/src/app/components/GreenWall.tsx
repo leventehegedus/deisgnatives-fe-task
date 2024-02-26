@@ -14,7 +14,7 @@ const BigText: React.FC<BigTextProps> = () => (
 const GreenWallSection: React.FC<GreenWallSectionProps> = () => (
   <div className="green-wall">
     <div className="intro">
-      <img src="/arrow.svg" alt="Arrow" />
+      <img className="desktop-view" src="/arrow.svg" alt="Arrow" />
       <div>
         <p>Mi az a zöldfal?</p>
         <br />

@@ -1,3 +1,21 @@
+body {
+  padding: 8px;
+  @media (min-width: 1440px) {
+    padding: 30px;
+  }
+}
+.desktop-view {
+  display: none;
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+.mobile-view {
+  display: block;
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
 .hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -5,9 +23,13 @@
   border-radius: 8px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 30px;
+  padding: 226px 24px 140px 24px;
   position: relative;
-  margin-bottom: 104px;
+  margin-bottom: 60px;
+  @media (min-width: 1440px) {
+    padding: 200px 30px;
+    margin-bottom: 104px;
+  }
   .header {
     display: flex;
     justify-content: space-between;
@@ -16,7 +38,21 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 30px;
+    padding: 36px 24px;
+    @media (min-width: 1440px) {
+      padding: 30px;
+    }
+
+    .hamburger-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b1ffa4;
+      color: #004947;
+      border-radius: 20px;
+    }
 
     .content {
       display: flex;
@@ -42,29 +78,43 @@
   }
 
   .content-container {
-    width: 600px;
+    @media (min-width: 1440px) {
+      width: 600px;
+    }
     margin: 0 auto;
     .title {
       font-family: "Tanker";
-      font-size: 70px;
+      font-size: 38px;
       font-weight: 400;
-      line-height: 72px;
+      line-height: 42px;
       letter-spacing: 0em;
       text-align: center;
       color: #fff;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
+      @media (min-width: 1440px) {
+        font-size: 70px;
+        line-height: 72px;
+        margin-bottom: 32px;
+      }
     }
     .description {
-      font-family: "Sharp Grotesk";
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
-      line-height: 22px;
+      line-height: 20px;
       letter-spacing: 0em;
       text-align: center;
-      width: 440px;
-      margin: 0 auto;
-      margin-bottom: 40px;
+      font-family: "Sharp Grotesk";
       color: #b1ffa4;
+      margin: 0 auto 30px auto;
+      width: 338px;
+
+      @media (min-width: 1440px) {
+        font-size: 16px;
+        line-height: 22px;
+        width: 440px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
     }
     button {
       padding: 12px 20px;
@@ -86,9 +136,16 @@
 .green-wall {
   display: flex;
   justify-content: space-between;
-  width: 1134px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  padding: 24px;
+  @media (min-width: 1440px) {
+    width: 1134px;
+    padding: 0;
+    margin-bottom: 54px;
+  }
+
   .intro {
     font-family: "Sharp Grotesk";
     font-size: 16px;
@@ -98,7 +155,13 @@
     display: flex;
     justify-content: flex-start;
     gap: 25px;
-    width: 353px;
+    padding-right: 42px;
+    margin-bottom: 20px;
+    @media (min-width: 1440px) {
+      width: 353px;
+      padding: 0;
+      margin: 0;
+    }
     img {
       height: 17px;
       width: 17px;
@@ -111,13 +174,19 @@
   }
   .big-text {
     font-family: Tanker;
-    font-size: 50px;
+    font-size: 36px;
+    line-height: 42px;
     font-weight: 400;
-    line-height: 52px;
     letter-spacing: 0em;
     text-align: left;
     color: #004947;
-    width: 585px;
+    @media (min-width: 1440px) {
+      width: 585px;
+      font-size: 50px;
+      line-height: 52px;
+      margin: 0;
+    }
+
     span {
       background-color: #fff;
     }
@@ -127,23 +196,40 @@
   display: flex;
   gap: 12px;
   justify-content: space-between;
-  width: 1134px;
-  height: 691px;
   margin: auto;
+  flex-wrap: wrap;
+  padding: 24px;
+  @media (min-width: 1440px) {
+    width: 1134px;
+    height: 691px;
+    padding: 0;
+  }
 
   .img-container {
-    width: 370px;
-    height: 570px;
+    height: 400px;
+    width: 100%;
     background-position: center;
     border-radius: 8px;
     padding: 30px;
     display: flex;
     align-items: flex-end;
+    background-size: cover;
+
     &:nth-child(2) {
-      margin-top: 60px;
+      margin-top: 0;
+      @media (min-width: 1440px) {
+        margin-top: 60px;
+      }
     }
     &:nth-child(3) {
-      margin-top: 120px;
+      margin-top: 0;
+      @media (min-width: 1440px) {
+        margin-top: 120px;
+      }
+    }
+    @media (min-width: 1440px) {
+      width: 370px;
+      height: 570px;
     }
 
     .title-container {
