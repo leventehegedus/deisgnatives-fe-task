@@ -1,0 +1,28 @@
+@import "../../mixins";
+@import "../../variables";
+
+.references {
+  background-color: $references-bg;
+  margin: -8px;
+  margin-top: 0;
+  padding: 40px 32px;
+  @include breakpoint-1440 {
+    margin: -30px;
+    margin-top: 0;
+    padding: 70px 152px;
+  }
+
+  .title {
+    font-family: "Sharp Grotesk";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .slider {
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../mixins";
+@import "../../variables";
+
+.reference-container {
+  .reference-img {
+    height: 360px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    width: 342px;
+    object-fit: cover;
+    @include breakpoint-1440 {
+      height: 441px;
+      width: auto;
+      object-fit: unset;
+    }
+  }
+  .reference-text {
+    font-family: "Sharp Grotesk";
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+
+    .text-container {
+      .city {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        text-transform: uppercase;
+      }
+      .text-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+      }
+    }
+    .arrow {
+      button {
+        background-color: $primary-green;
+        height: 39px;
+        width: 39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+  }
+}
